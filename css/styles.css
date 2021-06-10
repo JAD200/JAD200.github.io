@@ -1,15 +1,23 @@
 #container{
     padding: 3em;
+
 }
 
 #header{
-    background-color: blueviolet;
+    color: white;
+    background: royalblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+    text-align: center;
+    box-shadow: 3em;
 }
 
 #footer{
-    background-color: blueviolet;
+    color: seashell;
+    background: blueviolet;
+    background-size: contain;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 10%;
-    font-size: small;
+    text-align: justify;
+    margin: auto;
+    font-size: medium;
 }
