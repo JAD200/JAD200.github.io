@@ -1,0 +1,15 @@
+#container{
+    padding: 3em;
+}
+
+#header{
+    background-color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#footer{
+    background-color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10%;
+    font-size: small;
+}
