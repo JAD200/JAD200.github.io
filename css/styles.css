@@ -2,12 +2,19 @@ body{
     margin: 0px;
     display: grid;
     grid-auto-flow: row;
+    grid-template-rows: 30% 100px auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    text-decoration: none;
+    color: unset;
 }
 header{
     /* text-align: center; */
     background: linear-gradient(#261C2C, #3E2C41);
     color: white;
+    display: flex;
+    justify-content: center;
 }
 .header__title{
     margin: 2vh 3vw;
@@ -22,12 +29,20 @@ footer{
     background: linear-gradient(#5C527F, #6E85B2);
     color: seashell;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-size: 2vh;
 }
-.footer__text{
+ .footer__text{
     padding: 2px 10px;
 }
-.footer__aclaration{
-    padding: 2px 10px;
+/* Ajuste a dispositivos mobiles */
+@media only screen and (max-width: 600px) {
+    a{
+        text-decoration: underline solid;
+        color: unset;
+    }
+    footer{
+        flex-direction: column;
+    }
 }
