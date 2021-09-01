@@ -1,30 +1,33 @@
-body{
+  body{
     margin: 0px;
     display: grid;
     grid-auto-flow: row;
-    grid-template-rows: 30% auto auto;
-    grid-template-columns: 100%;
+    grid-template-rows: 20% 500px 20%;
     font-family: 'Muli', sans-serif;
-    
     background: linear-gradient(#261C2C, #3E2C41);
-}
-a{
+  }
+  a{
     text-decoration: none;
     color: unset;
-}
-header{
-    color: white;
+  }
+  header{
+   color: white;
     display: flex;
     justify-content: center;
-}
-.header__title{
-    margin: 2vh 3vw;
-}
-.main__title{
+  } 
+  .header__logo{
+    margin: 2vh 0vw;
+    width: 8vw;
+    height: 8vh;
+  }
+  .header__title{
+    margin: 2vh 8px;
+  }
+  .main__title{
     color: white;
     margin: 1vh 2vw;
-}
-.carousel {
+  }
+  .carousel {
     overflow: scroll;
     padding-left: 30px;
     width: 100%;
@@ -45,13 +48,13 @@ header{
   .carousel__container:hover .carousel-item {
     opacity: 0.3;
   }
-  
+  /* Tamaño del hover */
   .carousel__container:hover .carousel-item:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 1;
   }
-  
+  /* Direcion del hover */
   .carousel-item {
     border-radius: 20px;
     overflow: hidden;
@@ -67,17 +70,17 @@ header{
     -webkit-transform-origin: center left;
     transform-origin: center left;
   }
-  
+   
   .carousel-item:hover ~ .carousel-item {
     -webkit-transform: translate3d(100px, 0, 0);
     transform: translate3d(100px, 0, 0);
   }
-  
+  /* Imagen del item */
   .carousel-item__img {
     width: 200px;
     height: 300px;
     -o-object-fit: cover;
-    object-fit: contain;
+    object-fit: cover;
   }
   
   .carousel-item__details {
@@ -159,45 +162,66 @@ footer{
 }
 /* Ajuste a dispositivos mobiles */
 @media only screen and (max-width: 600px) {
-    a{
-        text-decoration: underline solid;
-        color: unset;
+  .header__logo{
+    margin: 2vh 0vw;
+    height: 40px;
+  }
+  a{
+    text-decoration: underline solid;
+    color: unset;
+  }
+  /* Tamaño del hover */
+  .carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  /* Direcion del hover */
+  .carousel-item {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: 450ms all;
+    transition: 450ms all;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+  }
+  .carousel-item__details--title {
+    color:rgba(0, 0, 0, 0.8);
+    margin: 5px 0px 0px 0px;
+  }
+  .carousel-item__details {
+    -webkit-box-align: start;
+      -ms-flex-align: start;
+        align-items: flex-start;
+    bottom: 0;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+      -ms-flex-pack: end;
+        justify-content: flex-start;
+    -ms-flex-line-pack: initial;
+      align-content: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    left: 0;
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
     }
-    .carousel-item:hover ~ .carousel-item {
-        -webkit-transform: translate3d(100px, 0, 0);
-        transform: translate3d(100px, 0, 0);
-      }
-    .carousel-item__details--title {
-        color:rgba(0, 0, 0, 0.9);
-        margin: 5px 0px 0px 0px;
-    }
-    .carousel-item__details {
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        background: rgba(0, 0, 0, 0) 100%;
-        bottom: 0;
-        font-size: 14px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        -ms-flex-line-pack: initial;
-            align-content: initial;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: column wrap;
-                flex-flow: column wrap;
-        left: 0;
-        opacity: 1;
-        padding: 10px;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    footer{
-        flex-direction: column;
-    }
+  footer{
+    flex-direction: column;
+  }
 }
