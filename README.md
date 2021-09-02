@@ -1,7 +1,13 @@
-JAD200.github.io
-# This is a page made with GitHub Pages
-## What does it has?📋
+# [JAD200.github.io](https://jad200.github.io/ "JAD200.github.io")
+##  This is a static page made with [GitHub Pages](https://pages.github.com/ "GitHub Pages")
 
-* ✂️📏At the moment it´s the draft for my real page with GitHub pages.📝
+------------
 
-###### ### If you read this README.MD please leave feedback, but try it to be constructive.
+### What does it have?📋
+
+- [Curso practico JavaScript](https://github.com/JAD200/curso_practico_javascript "Repositorio")
+
+------------
+
+##### If you read this README.MD please leave constructive. feedback.
+### Thank you 💜
