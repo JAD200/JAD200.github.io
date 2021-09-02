@@ -16,9 +16,9 @@
     justify-content: center;
   } 
   .header__logo{
-    margin: 2vh 0vw;
-    width: 8vw;
-    height: 8vh;
+    width: 9vh;
+    height:  80px;
+    margin: 20px 25px;
   }
   .header__title{
     margin: 2vh 8px;
@@ -163,8 +163,8 @@ footer{
 /* Ajuste a dispositivos mobiles */
 @media only screen and (max-width: 600px) {
   .header__logo{
-    margin: 2vh 0vw;
-    height: 40px;
+    margin: 20px 25px;
+    height: 45px;
   }
   a{
     text-decoration: underline solid;
