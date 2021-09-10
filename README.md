@@ -7,7 +7,9 @@
 
 - [Curso practico JavaScript](https://github.com/JAD200/curso_practico_javascript "Repositorio")
 
+- [Practicas en C](https://github.com/JAD200/practices_C "Repositorio")
+
 ------------
 
-##### If you read this README.MD please leave constructive. feedback.
+##### If you read this please leave constructive feedback.
 ### Thank you 💜
