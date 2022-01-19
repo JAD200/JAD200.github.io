@@ -48,13 +48,13 @@ header {
 .carousel__container:hover .carousel-item {
     opacity: 0.3;
 }
-/* Tamaño del hover */
+/* Hover size */
 .carousel__container:hover .carousel-item:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 1;
 }
-/* Direcion del hover */
+/* Hover direction */
 .carousel-item {
     -webkit-transform-origin: center left;
     -webkit-transition: 450ms all;
@@ -74,7 +74,7 @@ header {
     -webkit-transform: translate3d(100px, 0, 0);
     transform: translate3d(100px, 0, 0);
 }
-/*? Imagen del item */
+/*? Item picture */
 .carousel-item__img {
     width: 200px;
     height: 300px;
@@ -130,7 +130,7 @@ header {
     color: white;
     margin: 5px 0px 0px 0px;
 }
-/*? Barra de seleccion */
+/*? Selection bar*/
 ::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 4px;
@@ -161,7 +161,7 @@ footer {
 .footer__text {
     padding: 2px 10px;
 }
-/** Ajuste a dispositivos mobiles */
+/** Mobile devices adjustment */
 
 @media only screen and (max-width: 600px) {
     .header__logo {
@@ -172,13 +172,13 @@ footer {
         text-decoration: underline solid;
         color: unset;
     }
-    /* Tamaño del hover */
+    /* Hover sizer */
     .carousel__container:hover .carousel-item:hover {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
         opacity: 1;
     }
-    /* Direcion del hover */
+    /* Hover direction */
     .carousel-item {
         border-radius: 20px;
         overflow: hidden;
