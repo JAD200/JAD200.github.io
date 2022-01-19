@@ -1,41 +1,41 @@
-  body{
+body {
     margin: 0px;
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: 20% 500px 20%;
     font-family: 'Muli', sans-serif;
-    background-color:#3E2C41;
-  }
-  a{
-    text-decoration: none;
+	background: linear-gradient(#e6a4b3, #92c4f3);
+}
+a {
+	text-decoration: none;
     color: unset;
-  }
-  header{
-  color: white;
+}
+header {
+	color: white;
     display: flex;
     justify-content: center;
-    background: linear-gradient( #261C2C, #3E2C41);
-  }
-  .header__logo{
+	background-color: #e6a4b3;
+}
+.header__logo {
     width: 9vh;
-    height:  80px;
+    height: 80px;
     margin: 20px 25px;
-  }
-  .header__title{
+}
+.header__title {
     margin: 2vh 8px;
-  }
-  .main__title{
+}
+.main__title {
     color: white;
     margin: 1vh 2vw;
-  }
-  /** Carousel */
-  .carousel {
+}
+/** Carousel */
+.carousel {
     overflow: scroll;
     padding-left: 30px;
     width: 100%;
     position: relative;
-  }
-  .carousel__container {
+}
+.carousel__container {
     transition: 450ms -webkit-transform;
     -webkit-transition: 450ms -webkit-transform;
     transition: 450ms transform;
@@ -44,18 +44,18 @@
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
-  }
-  .carousel__container:hover .carousel-item {
+}
+.carousel__container:hover .carousel-item {
     opacity: 0.3;
-  }
-  /* Tamaño del hover */
-  .carousel__container:hover .carousel-item:hover {
+}
+/* Tamaño del hover */
+.carousel__container:hover .carousel-item:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 1;
-  }
-  /* Direcion del hover */
-  .carousel-item {
+}
+/* Direcion del hover */
+.carousel-item {
     -webkit-transform-origin: center left;
     -webkit-transition: 450ms all;
     border-radius: 20px;
@@ -69,38 +69,48 @@
     transform-origin: center left;
     transition: 450ms all;
     width: 200px;
-  }
-  .carousel-item:hover ~ .carousel-item {
+}
+.carousel-item:hover ~ .carousel-item {
     -webkit-transform: translate3d(100px, 0, 0);
     transform: translate3d(100px, 0, 0);
-  }
-  /*? Imagen del item */
-  .carousel-item__img {
+}
+/*? Imagen del item */
+.carousel-item__img {
     width: 200px;
     height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
-  }
-  .carousel-item__details {
+}
+.carousel-item__details {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(0, 0, 0, 0.9)),
+        to(rgba(0, 0, 0, 0))
+    );
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
     bottom: 0;
     font-size: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -ms-flex-line-pack: initial;
-        align-content: initial;
+    align-content: initial;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
     left: 0;
     opacity: 0;
     -webkit-transition: 450ms opacity;
@@ -109,111 +119,111 @@
     position: absolute;
     right: 0;
     top: 0;
-  }
-  .carousel-item__details img {
+}
+.carousel-item__details img {
     width: 25px;
-  }
-  .carousel-item:hover .carousel-item__details {
+}
+.carousel-item:hover .carousel-item__details {
     opacity: 1;
-  }
-  .carousel-item__details--title {
+}
+.carousel-item__details--title {
     color: white;
     margin: 5px 0px 0px 0px;
-  }
-  /*? Barra de seleccion */
-  ::-webkit-scrollbar-thumb {
+}
+/*? Barra de seleccion */
+::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 4px;
-  }
-  ::-webkit-scrollbar {
+}
+::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 4px;
-  }
-  ::-webkit-scrollbar:hover {
+}
+::-webkit-scrollbar:hover {
     background: #b3b3b3;
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  ::-webkit-scrollbar:hover:active {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar:hover:active {
     background: #999;
-  }
+}
 
-footer{
-    background-color: #5C527F;
+footer {
+    background-color: #92c4f3;
     color: seashell;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2vh;
 }
-.footer__text{
+.footer__text {
     padding: 2px 10px;
 }
 /** Ajuste a dispositivos mobiles */
 
 @media only screen and (max-width: 600px) {
-  .header__logo{
-    margin: 20px 25px;
-    height: 45px;
-  }
-  a{
-    text-decoration: underline solid;
-    color: unset;
-  }
-  /* Tamaño del hover */
-  .carousel__container:hover .carousel-item:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  /* Direcion del hover */
-  .carousel-item {
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 250px;
-    margin-right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    -webkit-transition: 450ms all;
-    transition: 450ms all;
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-  }
-  .carousel-item__details--title {
-    color:rgba(0, 0, 0, 0.8);
-    margin: 5px 0px 0px 0px;
-  }
-  .carousel-item__details {
-    -webkit-box-align: start;
-      -ms-flex-align: start;
-        align-items: flex-start;
-    bottom: 0;
-    font-size: 14px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-      -ms-flex-pack: end;
-        justify-content: flex-start;
-    -ms-flex-line-pack: initial;
-      align-content: initial;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-    left: 0;
-    opacity: 1;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    .header__logo {
+        margin: 20px 25px;
+        height: 45px;
     }
-  footer{
-    flex-direction: column;
-  }
+    a {
+        text-decoration: underline solid;
+        color: unset;
+    }
+    /* Tamaño del hover */
+    .carousel__container:hover .carousel-item:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    /* Direcion del hover */
+    .carousel-item {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 250px;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-transition: 450ms all;
+        transition: 450ms all;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+    }
+    .carousel-item__details--title {
+        color: rgba(0, 0, 0, 0.8);
+        margin: 5px 0px 0px 0px;
+    }
+    .carousel-item__details {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        bottom: 0;
+        font-size: 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-start;
+        -ms-flex-line-pack: initial;
+        align-content: initial;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        left: 0;
+        opacity: 1;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    footer {
+        flex-direction: column;
+    }
 }
