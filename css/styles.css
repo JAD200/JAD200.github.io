@@ -2,7 +2,7 @@ body {
     margin: 0px;
     display: grid;
     grid-auto-flow: row;
-    grid-template-rows: 20% 500px;
+    grid-template-rows: [header]20% [content]500px [footer]18% ;
     font-family: 'Muli', sans-serif;
 	background: linear-gradient(#e6a4b3, #92c4f3);
 }
@@ -164,7 +164,7 @@ footer {
 }
 /** Mobile devices adjustment */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
     .header__logo {
         margin: 20px 25px;
         height: 45px;
