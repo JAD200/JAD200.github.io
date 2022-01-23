@@ -18,7 +18,7 @@ header {
 .header__logo {
     height: 10.5vh;
     margin: 20px 25px;
-    width: 9vh;
+    /* width: 9vh; */
 }
 .header__title {
     font-size: 45px;
