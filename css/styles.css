@@ -1,17 +1,26 @@
 body {
+    color: #FDCEB9;
+    /* Color palettes for text
+    #41444B
+    #FDCEB9
+    */
     margin: 0px;
     display: grid;
     grid-auto-flow: row;
-    grid-template-rows: [header]20% [content]500px [footer]18% ;
+    grid-template-rows: 20% 500px 18% ;
     font-family: 'Muli', sans-serif;
-	background: linear-gradient(#e6a4b3, #92c4f3);
+	background: linear-gradient(#655D8A, #436276);
+    /* Color palettes for background
+    (#655D8A, #436276)
+    (#e6a4b3, #92c4f3)
+    */
 }
 a {
 	text-decoration: none;
     color: unset;
 }
 header {
-	color: seashell;
+	/* color: #41444B; */
     display: flex;
     justify-content: center;
 }
@@ -25,7 +34,7 @@ header {
     margin: 45px 5px;
 }
 .main__title {
-    color: seashell;
+    /* color: #41444B; */
     margin: 1vh 2vw;
 }
 /** Carousel */
@@ -151,7 +160,6 @@ header {
 }
 
 footer {
-    background-color: #92c4f3;
     display: flex;
     flex-wrap:nowrap;
     justify-content: space-evenly;
@@ -159,8 +167,8 @@ footer {
 }
 #footer__text {
 	font-size: 2.3vh;
-	color: seashell;
-	text-shadow:black 0.5px 0.8px 10px;
+	/* color: #41444B; */
+	text-shadow:black 4px 5px 10px;
 }
 /** Small devices adjustment */
 
