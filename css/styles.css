@@ -1,26 +1,37 @@
 body {
-    color: #FDCEB9;
-    /* Color palettes for text
-    #41444B
-    #FDCEB9
-    */
-    margin: 0px;
+
+    --background: linear-gradient(#e6a4b3, #92c4f3);
+    --color: #414141;
+    --text-shadow: white 4px 5px 10px;
+/* Button background and text color */
+    --button-color: #655d8a;
+    --button-text: white;
+
+    background: var(--background);
+    color: var(--color);
     display: grid;
-    grid-auto-flow: row;
-    grid-template-rows: 20% 500px 18% ;
     font-family: 'Muli', sans-serif;
-	background: linear-gradient(#655D8A, #436276);
-    /* Color palettes for background
-    (#655D8A, #436276)
-    (#e6a4b3, #92c4f3)
-    */
+    grid-auto-flow: row;
+    grid-template-rows: 20% 500px 18%;
+    margin: 0px;
+    transition: 1s;
+    transition-property: var(--background);
+}
+
+.dark-theme {
+    --background: linear-gradient(#655d8a, #436276);
+    --color: #fdceb9;
+    --text-shadow: black 4px 5px 10px;
+/* Button background and text color */
+    --button-color: #e6a4b3;
+    --button-text: black;
 }
 a {
-	text-decoration: none;
-    color: unset;
+    text-decoration: none;
+    color:var(--color)
 }
 header {
-	/* color: #41444B; */
+    /* color: 41444B; */
     display: flex;
     justify-content: center;
 }
@@ -29,6 +40,19 @@ header {
     margin: 20px 25px;
     /* width: 9vh; */
 }
+/**Theme changer button */
+.button{
+    background-color: var(--button-color);
+    border-radius: 3rem;
+    border: none;
+    color: var(--button-text);
+    display: inline-block;
+    height: 3vh;
+    margin: 20px 5px;
+    position: relative;
+    transition-duration: 1.5s;
+}
+
 .header__title {
     font-size: 45px;
     margin: 45px 5px;
@@ -161,14 +185,14 @@ header {
 
 footer {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
 #footer__text {
-	font-size: 2.3vh;
-	/* color: #41444B; */
-	text-shadow:black 4px 5px 10px;
+    font-size: 2.3vh;
+    /* color: #41444B; */
+    text-shadow: var(--text-shadow);
 }
 /** Small devices adjustment */
 
