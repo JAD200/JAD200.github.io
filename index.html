@@ -1,63 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/fluency/96/000000/pixel-heart.png">
-    <title> Home | Courses </title>
-</head>
-<body>
-    <header class="header">
-        <h1 class="header__title">💜 Welcome 💜</h1>
-        <img class="header__logo" src="./images/main_logo.png" alt="Creator's logo">
-        <!-- button to switch dark/light states -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            rel="shortcut icon"
+            href="https://img.icons8.com/fluency/96/000000/pixel-heart.png"
+        />
+        <title>Home | Courses</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">💜 Welcome 💜</h1>
+            <a
+                href="https://github.com/JAD200"
+                target="_blank"
+                referrerpolicy="no-referrer"
+                ><img
+                    class="header__logo"
+                    src="./images/main_logo.png"
+                    alt="Creator's logo"
+            /></a>
+            <!-- button to switch dark/light themes -->
             <button id="toggle" class="button">Change theme</button>
         </header>
-    <main class="main">
-        <section class="carousel">
-            <h2 class="main__title">Principal jobs</h2>
-            <!--* Start of container -->
-            <div class="carousel__container">
-                <!-- Curso practico de JavaScript -->
-                <div class="carousel-item">
-                    <a href="https://bit.ly/3jyOXOw">
-                    <img class="carousel-item__img" src="./images/js_logo.png" alt="JavaScript icon">
+        <main class="main">
+            <section class="carousel">
+                <h2 class="main__title">Principal jobs</h2>
+                <!--* Start of container -->
+                <div class="carousel__container">
+                    <!-- Curso practico de JavaScript -->
+                    <div class="carousel-item">
+                        <a href="https://bit.ly/3jyOXOw">
+                            <img
+                                class="carousel-item__img"
+                                src="./images/js_logo.png"
+                                alt="JavaScript icon"
+                            />
 
-                    <div class="carousel-item__details">
-                        <p class="carousel-item__details--title">Curso practico de JavaScript</p>
+                            <div class="carousel-item__details">
+                                <p class="carousel-item__details--title">
+                                    Curso practico de JavaScript
+                                </p>
+                            </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <!-- Practicas con C -->
-                <div class="carousel-item">
-                    <a href="https://github.com/JAD200/practices_C">
-                    <img class="carousel-item__img" src="./images/c_logo.png" alt="language C icon">
+                    <!-- Practicas con C -->
+                    <div class="carousel-item">
+                        <a href="https://github.com/JAD200/practices_C">
+                            <img
+                                class="carousel-item__img"
+                                src="./images/c_logo.png"
+                                alt="language C icon"
+                            />
 
-                    <div class="carousel-item__details">
-                        <p class="carousel-item__details--title">Practicas en C</p>
+                            <div class="carousel-item__details">
+                                <p class="carousel-item__details--title">
+                                    Practicas en C
+                                </p>
+                            </div>
+                        </a>
                     </div>
-                    </a>
                 </div>
+                <!-- End of container -->
+            </section>
+        </main>
+        <footer class="footer" id="footer__text">
+            <p>Hope you've liked it 😄</p>
+            <section id="footer__links">
+                <div>
+                    <a href="https://pages.github.com/"
+                        >Made with GitHub Pages</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://linkedin.com/in/juan-agustin-di-pasquo-jad"
+                        target="_blank"
+                        referrerpolicy="no-referrer"
+                        >LinkedIn</a
+                    >
+                </div>
+            </section>
+            <div>
+                <p>Icons used</p>
+                <ul title="Icons used">
+                    <li>
+                        <a
+                            href="https://icons8.com/icon/upd5xh7hPe0R/corazón-del-pixel"
+                            >Corazón del pixel icon by Icons8</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <!-- End of container -->
-        </section>
-    </main>
-    <footer class="footer" id="footer__text">
-        <p>
-            Hope you've liked it 😄
-        </p>
-        <div>
-            <a href="https://pages.github.com/">Made with GitHub Pages</a>
-        </div>
-        <div>
-            <p>Icons used</p>
-            <ul title="Icons used">
-                <li><a href="https://icons8.com/icon/upd5xh7hPe0R/corazón-del-pixel">Corazón del pixel icon by Icons8</a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="js/changeTheme.js"></script>
-</body>
+        </footer>
+        <script src="js/changeTheme.js"></script>
+    </body>
 </html>
