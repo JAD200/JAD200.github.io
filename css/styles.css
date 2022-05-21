@@ -110,7 +110,7 @@ header {
 /*? Item picture */
 .carousel-item__img {
     width: 200px;
-    height: 300px;
+    height: 260px;
     -o-object-fit: cover;
     object-fit: cover;
 }
